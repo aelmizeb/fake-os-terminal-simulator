@@ -1,0 +1,128 @@
+
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+#desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Terminal window */
+.terminal {
+  position: absolute;
+  width: 500px;
+  color: #c5c8c6;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px; /* Optional fallback */
+  background: #1e1e1e; /* Ensure black base */
+}
+
+/* Top bar with buttons (like GNOME Terminal) */
+.terminal-header {
+  background-color: #2d2d2d;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terminal-title {
+  color: #ddd;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.terminal-button.close {
+  background-color: #ff5f56;
+}
+.terminal-button.minimize {
+  background-color: #ffbd2e;
+}
+.terminal-button.maximize {
+  background-color: #27c93f;
+}
+
+.terminal-body {
+  flex-grow: 1; /* Fills remaining space */
+  background-color: #000; /* Stays black */
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Output styles */
+.output-line {
+  margin: 2px 0;
+  white-space: pre-wrap;
+}
+
+.output-success {
+  color: #98c379;
+}
+
+.output-fail {
+  color: #e06c75;
+}
+
+.output-info {
+  color: #61afef;
+}
+
+
+.desktop-icon {
+  position: absolute;
+  width: 64px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.desktop-icon img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 5px;
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+.desktop-icon span {
+  display: block;
+  text-shadow: 1px 1px 2px black;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 8px;
+  animation: blink 1s step-start infinite;
+  color: #c5c8c6;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

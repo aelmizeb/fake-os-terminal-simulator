@@ -1,0 +1,11 @@
+{
+  "title": "Terminal 2",
+  "commands": [
+    {
+      "command": "rm -rf /",
+      "animation": "type",
+      "output": "Permission denied",
+      "outputColor": "fail"
+    }
+  ]
+}

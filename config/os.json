@@ -1,0 +1,23 @@
+{
+  "background": "./assets/img/background.jpg",
+  "terminals": [
+    { "file": "./config/terminal1.json", "x": 200, "y": 100 },
+    { "file": "./config/terminal2.json", "x": 800, "y": 250 }
+  ],
+  "icons": [
+    {
+      "name": "Terminal",
+      "icon": "./assets/img/icons/icon1.png",
+      "x": 40,
+      "y": 40,
+      "launch": "terminal2.json"
+    },
+    {
+      "name": "Shell",
+      "icon": "./assets/img/icons/icon2.png",
+      "x": 40,
+      "y": 120,
+      "launch": "terminal1.json"
+    }
+  ]
+}

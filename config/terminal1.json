@@ -1,0 +1,60 @@
+{
+  "title": "Terminal 1",
+  "minHeight": 500,
+  "width": 700,
+  "showCursor": true,
+  "commands": [
+    {
+      "command": "cd ~/projects/myapp",
+      "animation": "type",
+      "output": "/home/user/projects/myapp",
+      "outputColor": "success"
+    },
+    {
+      "command": "sudo apt update",
+      "animation": "progress",
+      "progress": { "duration": 3000, "color": "yellow" }
+    },
+    {
+      "command": "sudo apt install -y nodejs npm",
+      "animation": "type",
+      "output": "Reading package lists...\nBuilding dependency tree...\nNode.js installed successfully.",
+      "outputColor": "success"
+    },
+    {
+      "command": "curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -",
+      "animation": "type",
+      "output": "Downloading NodeSource setup script...\nSetting up repository...",
+      "outputColor": "success"
+    },
+    {
+      "command": "npm install",
+      "animation": "progress",
+      "progress": { "duration": 5000, "color": "#4caf50" }
+    },
+    {
+      "command": "chmod +x start.sh",
+      "animation": "type",
+      "output": "Permissions updated",
+      "outputColor": "success"
+    },
+    {
+      "command": "./start.sh",
+      "animation": "type",
+      "output": "Launching development server...\n[INFO] Server running at http://localhost:3000",
+      "outputColor": "success"
+    },
+    {
+      "command": "systemctl restart nginx",
+      "animation": "type",
+      "output": "Job for nginx.service failed because the control process exited with error code.",
+      "outputColor": "fail"
+    },
+    {
+      "command": "Check logs",
+      "animation": "type",
+      "output": "Run: journalctl -xeu nginx.service",
+      "outputColor": "warn"
+    }
+  ]
+}
