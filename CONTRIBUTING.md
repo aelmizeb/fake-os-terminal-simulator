@@ -17,6 +17,11 @@ Before contributing, make sure you have:
    cd fake-os-terminal-simulator
    ```
 
+2. **Use a local development server**:
+
+   You need to run a simple HTTP server to execute the project (because of the use of fetch())
+
+   If you're using Visual Studio Code, install the Live Server extension, right-click index.html, and select "Open with Live Server".
 
 ## 🧪 Testing Your Changes
 After making changes, test in browsers.
