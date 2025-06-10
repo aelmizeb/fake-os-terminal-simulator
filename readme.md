@@ -2,7 +2,7 @@
 
 This project is a customizable fake OS terminal simulator built with HTML, CSS, and JavaScript. It simulates terminal commands, animations, and outputs; perfect for tech demonstrations, storytelling, film props, educational purposes, or just for fun. Whether you're recreating hacker scenes for a short film, building interactive tutorials, or adding flair to your portfolio, this simulator offers an immersive and flexible experience with draggable windows, typing effects, progress animations, and theming options.
 
-![screenshot](/assets/img/preview.png)
+![screenshot](/assets/img/preview.gif)
 
 **[Live Demo](https://aelmizeb.github.io/fake-os-terminal-simulator/)**
 

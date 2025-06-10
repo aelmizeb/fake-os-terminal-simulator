@@ -9,15 +9,19 @@
       "name": "Terminal",
       "icon": "./assets/img/icons/icon1.png",
       "x": 40,
-      "y": 40,
-      "launch": "terminal2.json"
+      "y": 40
     },
     {
       "name": "Shell",
       "icon": "./assets/img/icons/icon2.png",
       "x": 40,
-      "y": 120,
-      "launch": "terminal1.json"
+      "y": 120
+    },
+    {
+      "name": "Mail",
+      "icon": "./assets/img/icons/icon3.png",
+      "x": 40,
+      "y": 200
     }
   ]
 }
